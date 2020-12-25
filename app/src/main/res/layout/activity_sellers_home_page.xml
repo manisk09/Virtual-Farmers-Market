@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vfmback8"
+    tools:context=".SellersHomePage">
+
+    <TextView
+        android:id="@+id/t_sellersPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/sellers_list"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+      <TextView
+        android:id="@+id/tv_currentProducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:paddingBottom="10dp"
+        android:text="@string/current_products_display"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@id/t_sellersPage"
+        app:layout_constraintTop_toTopOf="@id/t_sellersPage" />
+
+      <TextView
+        android:id="@+id/tv_soldProducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:paddingBottom="10dp"
+        android:text="@string/sold_products_display"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@id/t_sellersPage"
+        app:layout_constraintTop_toTopOf="@id/t_sellersPage" />
+
+    <TextView
+        android:id="@+id/tv_showType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Change display to:"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/t_sellersPage"
+        app:layout_constraintTop_toBottomOf="@id/t_sellersPage"
+        />
+
+
+  <Button
+        android:id="@+id/b_addedStatus"
+        android:layout_width="120dp"
+        android:layout_height="24dp"
+        android:background="@drawable/custom_button_round"
+        android:text="@string/current_products"
+        android:visibility="invisible"
+        android:textAllCaps="false"
+        android:layout_marginEnd="10dp"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/tv_showType"
+        app:layout_constraintBottom_toBottomOf="@id/tv_showType" />
+
+    <Button
+        android:id="@+id/b_soldStatus"
+        android:layout_width="120dp"
+        android:layout_height="24dp"
+        android:visibility="visible"
+        android:background="@drawable/custom_button_round"
+        android:text="@string/sold_products"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/tv_showType"
+        app:layout_constraintBottom_toBottomOf="@id/tv_showType" />
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_seller_products"
+    android:layout_width="408dp"
+    android:layout_height="462dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="13dp"
+    android:scrollbars="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/t_sellersPage" />
+
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:paddingTop="0dp"
+            app:fabAlignmentMode="center"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="5dp"
+            app:fabCradleVerticalOffset="10dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation_view_sell_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_navigation_menu_sell">
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_add_24"
+            app:backgroundTint="@color/colorPrimary"
+            app:layout_anchor="@+id/bottomAppBar"
+            app:layout_anchorGravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/bottomAppBar"
+            app:layout_constraintStart_toEndOf="@+id/bottomAppBar" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="edu.newhaven.virtualfarmersmarket">
+
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+  <uses-feature
+    android:name="android.hardware.camera"
+    android:required="false" />
+
+  <application
+      android:usesCleartextTraffic="true"
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/Theme.MyApp">
+
+    <activity android:name=".ProductDetailsSeller"
+      android:parentActivityName=".SellersHomePage"/>
+    <activity android:name=".UserSettings" />
+    <activity
+      android:name=".ForgotPassword"
+      android:parentActivityName=".Login" />
+
+    <meta-data
+      android:name="com.google.android.wearable.standalone"
+      android:value="true" />
+
+    <activity android:name=".ProductDetailsBuyer" />
+    <activity android:name=".ProductListingForBuyer" />
+    <activity
+      android:name=".Login"
+      android:parentActivityName=".BuyersHomePage" />
+
+    <uses-library
+      android:name="com.google.android.maps"
+      android:required="false" />
+
+    <activity
+      android:name=".Registration"
+      android:parentActivityName=".ProductDetailsBuyer"/>
+    <activity android:name=".SellersHomePage" />
+
+    <provider
+      android:name="androidx.core.content.FileProvider"
+      android:authorities="edu.newhaven.virtualfarmersmarket.fileprovider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/fileprovider" />
+    </provider>
+
+    <activity
+      android:name=".AddNewProduct"
+      android:windowSoftInputMode="adjustResize" />
+    <activity
+      android:name=".BuyersHomePage"
+      android:windowSoftInputMode="adjustResize">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <meta-data
+      android:name="preloaded_fonts"
+      android:resource="@array/preloaded_fonts" />
+
+
+
+    <meta-data
+      android:name="com.google.firebase.messaging.default_notification_icon"
+      android:resource="@color/colorAccent"/>
+  </application>
+
+</manifest>
