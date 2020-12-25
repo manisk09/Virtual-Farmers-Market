@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "693736691520",
+    "firebase_url": "https://virtual-farmers-market-de010.firebaseio.com",
+    "project_id": "virtual-farmers-market-de010",
+    "storage_bucket": "virtual-farmers-market-de010.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693736691520:android:c66e078baf6c5effa3cca5",
+        "android_client_info": {
+          "package_name": "edu.newhaven.virtualfarmersmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693736691520-kas7n4pml3n03ibv3nng75356d481mo2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAOV7sed64xRA9A2cKo0LD1MU4NnSF_z0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693736691520-kas7n4pml3n03ibv3nng75356d481mo2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

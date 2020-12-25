@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_productListingVhPhoto"
+        android:layout_width="116dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/iv_content_description_PLVH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fruits" />
+
+    <TextView
+        android:id="@+id/tv_productListingVhProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/product_name_PLVH"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toEndOf="@+id/iv_productListingVhPhoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_productListingVhDollarSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/dollar_symbol"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_productListingVhPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tv_productListingVhProductName" />
+
+    <TextView
+        android:id="@+id/tv__productListingVhPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/product_price_PLVH"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_productListingVhDollarSymbol"
+        app:layout_constraintTop_toBottomOf="@+id/tv_productListingVhProductName" />
+
+    <Button
+        android:id="@+id/bt_productListingVhBuy"
+        android:layout_width="68dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_round"
+        android:text="@string/buy_button_PLVH"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv__productListingVhPrice" />
+
+    <TextView
+        android:id="@+id/tv_productListingDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/distance_PLVH"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toEndOf="@+id/iv_distance_logo"
+        app:layout_constraintTop_toBottomOf="@+id/tv__productListingVhPrice"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ImageView
+        android:id="@+id/iv_distance_logo"
+        android:layout_width="34dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:contentDescription="@string/locationIcon_PLVH"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_productListingVhBuy"
+        app:layout_constraintStart_toEndOf="@+id/bt_productListingVhBuy"
+        app:layout_constraintTop_toTopOf="@+id/bt_productListingVhBuy"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/ic_baseline_location_on_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

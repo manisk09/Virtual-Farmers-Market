@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_sell_buy_home"
+        android:icon="@drawable/custom_sell_buy_button_icon"
+        android:title="@string/bottom_nav_buy" />
+
+    <item android:id="@+id/nav_sell_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/bottom_nav_home"/>
+
+    <item android:id="@+id/nav_sell_add_new_product"
+        android:title="@string/add_product_menu"/>
+
+    <item android:id="@+id/nav_sell_settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/bottom_nav_user_settings"/>
+
+    <item android:id="@+id/nav_sell_logout"
+        android:icon="@drawable/ic_baseline_power_settings_new_24"
+        android:title="@string/bottom_nav_logout"/>
+
+</menu>

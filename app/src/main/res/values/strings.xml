@@ -1,0 +1,112 @@
+<resources>
+  <string name="app_name">Virtual Farmers Market</string>
+  <string name="welcome_string">Welcome!! what do you want to do?</string>
+  <string name="sell_button">Sell</string>
+  <string name="buy_button">Buy</string>
+  <string name="add_button">Add New Product</string>
+  <string name="product_search">Product Search</string>
+  <string name="product_search_hint">Enter a product name</string>
+  <string name="category_one">Fruits</string>
+  <string name="category_five">OtherFoods</string>
+  <string name="category_four">Proteins</string>
+  <string name="category_three">Produce</string>
+  <string name="category_two">Grains</string>
+  <string name="bottom_nav_sell">Sell</string>
+  <string name="bottom_nav_buy">Buy</string>
+  <string name="bottom_nav_home">Home</string>
+  <string name="bottom_nav_user_settings">User settings</string>
+  <string name="bottom_nav_logout">Logout</string>
+  <string name="categories_heading">Categories</string>
+  <string-array name="categoryList" />
+
+
+  <string name="add_products">Add Product</string>
+  <string name="photo">photo</string>
+  <string name="product_name">Product Name</string>
+  <string name="addQuantity">What quantities are available?</string>
+  <string name="addCost">What does each quantity cost?</string>
+  <string name="addProd_details">What else do you want to say about the product?</string>
+  <string name="addZip_code">Zip code of product\'s location</string>
+  <string name="add_product">Add Product for Sale</string>
+  <string name="product_name_PLVH">Product Name</string>
+  <string name="iv_content_description_PLVH">Image of product will be shown here</string>
+  <string name="product_description_PLVH">Product Description</string>
+  <string name="dollar_symbol">$</string>
+  <string name="product_price_PLVH">Product Price</string>
+  <string name="available_quantity_PLVH">Available Quantity</string>
+  <string name="category_title_PLVH">Category :</string>
+  <string name="category_name_PLVH">Category Name</string>
+  <string name="buy_button_PLVH">Get it</string>
+  <string name="products_listing_title">Products in :</string>
+  <string name="quantity">Quantity:</string>
+  <string name="price">Price</string>
+  <string name="editButton">Edit</string>
+  <string name="sold_outButton">Sold Out</string>
+  <string name="deleteButton">Delete</string>
+  <string name="sellers_list">Seller\'s List</string>
+  <string name="prodPicture">prodPicture</string>
+  <string name="prodTakePicture">prodTakePicture</string>
+
+
+  <string name="sell_page">Sell Page</string>
+  <string name="distance_PLVH">Distance</string>
+  <string name="registration">Registration</string>
+  <string name="email_address">Email Address/User Name</string>
+  <string name="phone_number">Phone Number</string>
+  <string name="preferred_name">Preferred Name</string>
+  <string name="password">Password</string>
+  <string name="confirm_password">Confirm Password</string>
+  <string name="preferred_search_zone_in_miles">Search Zone(in miles)</string>
+  <string name="register">Register</string>
+  <string name="choose_picture">Choose A Picture</string>
+  <string name="title_activity_login">activity_login</string>
+  <string name="add_location">Add My Location</string>
+  <!--
+  This string is used for square devices and overridden by hello_world in
+  values-round/strings.xml for round devices.
+  -->
+  <string name="hello_world">Hello Square World!</string>
+  <string name="already_user">Already a User? Login Here</string>
+  <string name="title_activity_main2">MainActivity2</string>
+  <string name="login">Login</string>
+  <string name="new_here_register">New here? Register</string>
+  <string name="zip_code">Zip Code</string>
+  <string name="locationIcon_PLVH">locationIcon</string>
+  <string name="product_details_buyer">Product Details</string>
+  <string name="image_description_buyer">Image of the product in details page</string>
+  <string name="product_description_buyer">Product description</string>
+  <string name="distance_PDB">Located 28 Mi from your location</string>
+  <string name="notify_seller">Get it!</string>
+  <string name="forgot_password">I forgot my password</string>
+  <string name="add_product_menu">Add Product</string>
+  <string name="title_activity_forgot_password">ForgotPassword</string>
+  <string name="reset_password">Reset Password</string>
+  <string name="user_settings">User Settings</string>
+  <string name="new_preferred_name">New Preferred Name</string>
+  <string name="new_phone_number">New Phone Number</string>
+  <string name="update_my_location">Update My Location</string>
+  <string name="new_search_limit">New Search Limit</string>
+
+  <string name="retrieve_data">Retrieve Data</string>
+  <string name="save_changes">Save Changes</string>
+  <string name="save_phone">Save Phone</string>
+  <string name="save_limit">Save Limit</string>
+  <string name="go_to_home_page">Go to Home Page</string>
+  <string name="loc_instructions">Location may take several seconds</string>
+    <string name="new_description">What is the new description?</string>
+  <string name="new_quantity">New Quantity?</string>
+  <string name="sign_in_home">Sign In</string>
+  <string name="sign_up_home">Registration</string>
+    <string name="serach_home">Used to search products</string>
+  <string name="phone_nbr">Phone Number</string>
+  <string name="current_data">Current Data</string>
+  <string name="search_area_limit">Search Area Limit</string>
+  <string name="current_products">Current Products</string>
+  <string name="sold_products">Sold Products</string>
+  <string name="current_products_display">-- Current Products --</string>
+  <string name="sold_products_display">-- Sold Products --</string>
+    <string name="for_sale">For Sale</string>
+  <string name="for_sale_again">For Sale</string>
+
+
+</resources>
